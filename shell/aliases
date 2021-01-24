@@ -1,0 +1,13 @@
+alias c='clear'
+alias v='nvim'
+
+# Calculator
+alias bc='bc -l'
+
+# Safety Confirmation
+alias rm='rm -i'
+alias cp='cp -i'
+
+alias mkdir='mkdir -pv'
+
+alias wb='cd $WORKBENCH'

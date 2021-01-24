@@ -1,0 +1,6 @@
+[user]
+	name = Elvis Eshikena
+	email = elviseshikena@gmail.com
+[core]
+	autocrlf = input
+	eol = lf

@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/shell/aliases: shell/aliases
+    ~/.config/shell/env: shell/env
+    ~/.config/zsh/zsh_custom: zsh/zsh_custom
+    ~/.bash_profile: bash/bash_profile
+    ~/.bash_logout: bash/bash_logout
+    ~/.bashrc: bash/bashrc
+    ~/.profile: profile
+    ~/.gitconfig: gitconfig
+    ~/.zshrc: zsh/zshrc
+
+- create:
+    - ~/.config/nvim/plugged
+    - ~/.config/zsh/zsh_custom
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
