@@ -13,8 +13,8 @@
     ~/.bash_profile: bash/bash_profile
     ~/.bash_logout: bash/bash_logout
     ~/.bashrc: bash/bashrc
-    ~/.profile: profile
-    ~/.gitconfig: gitconfig
+    ~/.profile: shell/profile
+    ~/.gitconfig: git/gitconfig
     ~/.zshrc: zsh/zshrc
 
 - create:
