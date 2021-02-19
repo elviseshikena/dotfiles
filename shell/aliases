@@ -1,5 +1,10 @@
+# Quick commands
 alias c='clear'
 alias v='nvim'
+
+# Shell
+alias zshconfig='v ~/.zshrc'
+alias bashconfig='v ~/.bashrc'
 
 # Calculator
 alias bc='bc -l'

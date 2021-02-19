@@ -1,11 +1,13 @@
 "Plug-ins
 call plug#begin('~/.config/nvim/plugged')
 " Tools
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/limelight.vim'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'preservim/nerdtree'
 " Syntax
     Plug 'vim-scripts/fountain.vim'
+    Plug 'preservim/nerdcommenter'
 " Color-schemes
     Plug 'morhetz/gruvbox'
     Plug 'NLKNguyen/papercolor-theme'
@@ -22,6 +24,7 @@ set spell spelllang=en_us
 set backspace=indent,eol,start confirm
 set shiftwidth=4 autoindent smartindent tabstop=4 softtabstop=4 expandtab  
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType vim setlocal foldmethod=marker
 set hls is ic
 set laststatus=2 cmdheight=1
 au BufRead,BufNewFile *.fountain set filetype=fountain
@@ -53,6 +56,10 @@ set statusline+=\ %l/%L
 set statusline+=\ [%c]
 
 "Key-bindings
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDTreeWinPos = "right"
 let mapleader=","
 nnoremap <leader><Space> :CtrlP<CR>
 nnoremap <leader>s :source ~/.config/nvim/init.vim<CR>
